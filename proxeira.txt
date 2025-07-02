@@ -1,0 +1,41 @@
+    const [setDeck] = useState([]);
+    const [dealerHand, setDealerHand] = useState([]);
+    const [playerHand, setPlayerHand] = useState([]);
+
+    const startGame = () => {
+        const newDeck = shuffleDeck(createDeck());
+
+        const playerCards = [newDeck.pop(), newDeck.pop()];
+        const dealerCards = [newDeck.pop(), newDeck.pop()];
+
+        setPlayerHand(playerCards);
+        setDealerHand(dealerCards);
+        setDeck(newDeck);
+    };
+
+    useEffect(() => {
+        startGame();
+    }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+{dealerHand.map((card, index) => (
+                <Card key={index} suit={card.suit} rank={card.rank} />
+                ))}
+
+
+
+
+{playerHand.map((card, index) => (
+                <Card key={index} suit={card.suit} rank={card.rank} />
+                ))}
