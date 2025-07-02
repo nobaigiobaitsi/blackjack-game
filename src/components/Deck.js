@@ -1,3 +1,6 @@
+import { GiSpades, GiHearts, GiDiamonds, GiClubs } from "react-icons/gi";
+
+
 {/*
     Ok, so the deck has 52 cards.
     There are four "suits" (spade, heart, diamond, club).
@@ -6,7 +9,14 @@
     */}
 
 
-const suits = ["Heart", "Diamond", "Club", "Spade"];
+export const suits = ["spades", "hearts", "diamonds", "clubs"];
+
+export const suitIcons = {
+  spades: <GiSpades />,
+  hearts: <GiHearts />,
+  diamonds: <GiDiamonds />,
+  clubs: <GiClubs />
+};
 
 const ranks = [
     { rank: "A", value: 11 },

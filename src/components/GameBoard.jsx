@@ -1,4 +1,6 @@
-function Baseboard() {
+
+
+function Gameboard() {
     return(
     <>
     <div className="bg-green-800 p-6 w-full">
@@ -22,4 +24,4 @@ function Baseboard() {
     )
 }
 
-export default Baseboard
+export default Gameboard

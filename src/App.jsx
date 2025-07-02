@@ -1,11 +1,11 @@
 import './App.css'
-import BaseBoard from "./components/BaseBoard"
+import GameBoard from "./components/GameBoard"
 
 function App() {
 
   return (
     <>
-      <BaseBoard />
+      <GameBoard />
     </>
   )
 }
